@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <header class="header">
       <nav class="header-nav">
         <div class="logo">
-          <img src="./assets/logo.jpg" />
-          <p>monogram</p>
+          <img src="./assets/logo.jpg" alt="logo" />
+          <a href="#">monogram</a>
         </div>
         <ul class="ul">
           <li><a href="#">how it works</a></li>
@@ -27,21 +33,27 @@
           <li><a href="#">downloads</a></li>
           <li><a href="#">support</a></li>
           <li><a href="#">shop</a></li>
-          <span></span>
+          <a href="#"><i class="fas fa-shopping-bag"></i></a>
         </ul>
       </nav>
     </header>
     <main class="main">
       <div class="main-container">
-        <div class="main-container-background">
-          <img src="./assets/home-hero.jpg" />
-        </div>
         <div class="main-container-text">
-          <h1>monogram</h1>
-          <h2>creative console</h2>
-          <h4>Simple. Powerful. Adaptable. A better way to create.</h4>
-          <button>watch the video</button>
-          <button>shop now</button>
+          <div class="main-container-texts hidden-text">
+            <div class="main-container-texts-box">
+              <h1>
+                <small>monogram</small><br />
+                creative console
+              </h1>
+              <p>Simple. Powerful. Adaptable. A better way to create.</p>
+            </div>
+            <div class="main-container-buttons">
+              <a href="#">watch the video</a>
+              <a href="#">shop now</a>
+            </div>
+          </div>
+          <div class="bg-image"></div>
         </div>
         <section class="section-1">
           <div class="container-section-1">
@@ -56,159 +68,221 @@
           </div>
         </section>
         <section class="section-2">
-          <div class="container-section-2-one">
-            <img src="./assets/parts/1plus2.webp" />
-            <img src="./assets/parts/3parts.webp" />
-            <img src="./assets/parts/3parts.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/circle.webp" />
+          <div class="left">
+            <div class="section-2-350vh">
+              <div class="container-section-2-one">
+                <img src="./assets/parts/master-left-alt.png" />
+              </div>
+            </div>
+            <div class="container-section-2-five">
+              <div class="text-container-five">
+                <h3>True creative freedom</h3>
+                <p>
+                  Combine modules in any shape or size and optimize for your
+                  personal workflow and style. Easily expand your console by
+                  adding or swapping modules as needed, without replacing the
+                  entire system.
+                </p>
+              </div>
+            </div>
+            <div class="section-2-400vh">
+              <div class="container-section-2-six">
+                <img src="./assets/parts/traveler-left.png" />
+              </div>
+            </div>
+            <div class="container-section-2-nine">
+              <div class="text-container-nine">
+                <h3>plug & play</h3>
+                <p>
+                  Creative Console comes pre-loaded with functionality for
+                  industry leading software. Plug in select your app, and start
+                  creating. It's that simple!
+                </p>
+              </div>
+            </div>
+            <div class="container-section-2-ten">
+              <img src="./assets/parts/studio-left.png" />
+            </div>
           </div>
-          <div class="container-section-2-two">
-            <img src="./assets/parts/circle.webp" />
-            <img src="./assets/parts/control.webp" />
-          </div>
-          <div class="container-section-2-three">
-            <h3>Creative expression re-imagined</h3>
-            <p>
-              Monogram's tactile tools help you engage with your work in a more
-              creative and expressive way. Inmerse yourself in the creative
-              process with intuitive control.
-            </p>
-          </div>
-          <div class="container-section-2-four">
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/circle.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/circle.webp" />
-          </div>
-          <div class="container-section-2-five">
-            <h3>True creative freedom</h3>
-            <p>
-              Combine modules in any shape or size and optimize for your
-              personal workflow and style. Easily expand your console by adding
-              or swapping modules as needed, without replacing the entire
-              system.
-            </p>
-          </div>
-          <div class="container-section-2-six">
-            <img src="./assets/parts/1plus2.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/3parts.webp" />
-          </div>
-          <div class="container-section-2-seven">
-            <h3>faster and more precise</h3>
-            <p>
-              creative Console puts your most used tools at your fingertips,
-              cutting your editing time in half. Avoid wrist fatrigue while
-              gaining pinpoint precision.
-            </p>
-          </div>
-          <div class="container-section-2-eight">
-            <img src="./assets/parts/control.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/3parts.webp" />
-          </div>
-          <div class="container-section-2-nine">
-            <h3>plug & play</h3>
-            <p>
-              Creative Console comes pre-loaded with functionality for industry
-              leading software. Plug in select your app, and start creating.
-              It's that simple!
-            </p>
-          </div>
-          <div class="container-section-2-ten">
-            <img src="./assets/parts/1plus2.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/3circles.webp" />
-            <img src="./assets/parts/circle.webp" />
+          <div class="right">
+            <div class="container-section-2-two">
+              <img src="./assets/parts/custom-right.png" />
+            </div>
+            <div class="container-section-2-three">
+              <div class="text-container-three">
+                <h3>Creative expression re-imagined</h3>
+                <p>
+                  Monogram's tactile tools help you engage with your work in a
+                  more creative and expressive way. Inmerse yourself in the
+                  creative process with intuitive control.
+                </p>
+              </div>
+            </div>
+            <div class="section-2-400vh">
+              <div class="container-section-2-four">
+                <img src="./assets/parts/master-right.png" />
+              </div>
+            </div>
+            <div class="container-section-2-seven">
+              <div class="text-container-seven">
+                <h3>faster and more precise</h3>
+                <p>
+                  creative Console puts your most used tools at your fingertips,
+                  cutting your editing time in half. Avoid wrist fatrigue while
+                  gaining pinpoint precision.
+                </p>
+              </div>
+            </div>
+            <div class="section-2-350vh">
+              <div class="container-section-2-eight">
+                <img src="./assets/parts/traveler-right.png" />
+              </div>
+            </div>
           </div>
         </section>
         <section class="section-3">
           <div class="container-section-3-one">
-            <h3>Next level productivity starts here.</h3>
-            <p>Meet each module</p>
+            <div class="section-3-one-container">
+              <h3 id="first-turn">Next level productivity starts here.</h3>
+              <p id="second-turn">Meet each module</p>
+            </div>
           </div>
           <div class="container-section-3-two">
-            <div class="container-section-3-two-img">
-              <img src="./assets/parts/1plus2.webp" />
+            <div class="section-3-two-left">
+              <div class="container-section-3-two-img" id="id-first-hidden-1">
+                <img src="./assets/parts/1plus2.webp" />
+              </div>
             </div>
             <div class="container-section-3-two-text">
-              <h3>monogram core</h3>
-              <p>
-                The Core powers and connects Creative Console to your PC or Mac.
-                Fast and smoth performance with two mechanicals keys for
-                switching and previewing the console's functionality
-              </p>
+              <div class="two-text-container" id="id-first-hidden">
+                <h3>monogram core</h3>
+                <p>
+                  The Core powers and connects Creative Console to your PC or
+                  Mac. Fast and smoth performance with two mechanicals keys for
+                  switching and previewing the console's functionality
+                </p>
+              </div>
             </div>
           </div>
-          <div class="container-section-3-three">
-            <div class="container-section-3-three-img">
-              <img src="./assets/parts/circle.webp" />
-            </div>
+          <div class="container-section-3-three" id="id-three-hidden">
             <div class="container-section-3-three-text">
-              <h3>Orbiter</h3>
-              <p>
-                Expressive 2D and 3D control with a pressure-sensitive disc and
-                an infinite encoder ring for smooth and precise adjustments.
-              </p>
-              <p>
-                <b>Use it for:</b> Tonal adjustments, color grading, smooth
-                transport control, and more
-              </p>
+              <div class="three-text-container" id="id-first-hidden-two">
+                <h3>Orbiter</h3>
+                <p>
+                  Expressive 2D and 3D control with a pressure-sensitive disc
+                  and an infinite encoder ring for smooth and precise
+                  adjustments.
+                </p>
+                <p class="three-smaller">
+                  <span>Use it for:</span> Tonal adjustments, color grading,
+                  smooth transport control, and more
+                </p>
+              </div>
+            </div>
+            <div class="container-section-3-three-img">
+              <div class="three-img" id="id-first-hidden-1-two">
+                <img src="./assets/parts/circle.webp" />
+              </div>
             </div>
           </div>
-          <div class="container-section-3-four">
-            <div class="container-section-3-four-img">
-              <img src="./assets/parts/3circles.webp" />
+          <div class="container-section-3-four" id="id-three-hidden-two">
+            <div
+              class="container-section-3-four-img"
+              id="id-first-hidden-1-three"
+            >
+              <img class="four-img" src="./assets/parts/3circles.webp" />
             </div>
             <div class="container-section-3-four-text">
-              <h3>Dial</h3>
-              <p>
-                Three endless encoders with a built-in button for secondary
-                functions. Control up to 135 programmable functions.
-              </p>
-              <p>
-                <b>Use it for:</b>Basics panel adjustments like exposure,
-                temperature, tint, shadows/highlights, blacks/whites, or RGB
-                color mixing in Photoshop
-              </p>
+              <div class="four-text" id="id-first-hidden-three">
+                <h3>Dial</h3>
+                <p>
+                  Three endless encoders with a built-in button for secondary
+                  functions. Control up to 135 programmable functions.
+                </p>
+                <p class="four-smaller">
+                  <span>Use it for:</span> Basics panel adjustments like
+                  exposure, temperature, tint, shadows/highlights,
+                  blacks/whites, or RGB color mixing in Photoshop
+                </p>
+              </div>
             </div>
           </div>
-          <div class="container-section-3-five">
-            <div class="container-section-3-five-img">
-              <img src="./assets/parts/control.webp">
-            </div>
+          <div class="container-section-3-five" id="id-three-hidden-three">
             <div class="container-section-3-five-text">
-              <h3>Slider</h3>
-              <p>Three smooth linear potentiometers for horizontal or vertical adjustments. Dynamically assign up to 45 programmable functions in one module.</p>
-              <p>
-                <b>Use it for:</p>b> Brush tool, dodge and burn, zoom, real-time expressive control of virtual instruments
-              </p>
+              <div class="five-container" id="id-first-hidden-four">
+                <h3>Slider</h3>
+                <p>
+                  Three smooth linear potentiometers for horizontal or vertical
+                  adjustments. Dynamically assign up to 45 programmable
+                  functions in one module.
+                </p>
+                <p class="five-smaller">
+                  <span>Use it for:</span> Brush tool, dodge and burn, zoom,
+                  real-time expressive control of virtual instruments
+                </p>
+              </div>
+            </div>
+            <div
+              class="container-section-3-five-img"
+              id="id-first-hidden-1-four"
+            >
+              <img src="./assets/parts/slider-top.webp" />
             </div>
           </div>
-          <div class="container-section-3-six">
-            <div class="container-section-3-six-img">
-              <img src="./assets/parts/3parts.webp">
+          <div class="container-section-3-six" id="id-three-hidden-four">
+            <div
+              class="container-section-3-six-img"
+              id="id-first-hidden-1-five"
+            >
+              <img src="./assets/parts/3parts.webp" />
             </div>
             <div class="container-section-3-six-text">
-              <h3>Essential Keys</h3>
-              <p>Three tactile mechanical switches to automate your most repetitive tasks. Assign up to 45 programmable functions and digitally label each on an on-screen display to bring up a preview on your screen. 
-              </p>
-              <p><b>Use it for:</b> Quick access to your most frequently used hotkeys, macros, actions, or MIDI notes</p>
+              <div class="six-container" id="id-first-hidden-five">
+                <h3>Essential Keys</h3>
+                <p>
+                  Three tactile mechanical switches to automate your most
+                  repetitive tasks. Assign up to 45 programmable functions and
+                  digitally label each on an on-screen display to bring up a
+                  preview on your screen.
+                </p>
+                <p class="smaller">
+                  <span>Use it for:</span> Quick access to your most frequently
+                  used hotkeys, macros, actions, or MIDI notes
+                </p>
+              </div>
             </div>
           </div>
-          <div class="container-section-3-seven">
-            <div class="container-section-3-seven-img">
-              <img src="./assets/parts/circle.webp">
-              <img src="./assets/parts/1plus2.webp">
-              <img src="./assets/parts/3circles.webp">
-              <img src="./assets/parts/3parts.webp">
-              <img src="./assets/parts/control.webp">
+          <div class="container-section-3-seven" id="id-three-hidden-five">
+            <div
+              class="container-section-3-seven-img"
+              id="id-three-hidden-five-2"
+            >
+              <div class="seven-left-20" id="id-left-20">
+                <img src="./assets/parts/circle.webp" />
+              </div>
+              <div class="seven-left-10">
+                <img src="./assets/parts/1plus2.webp" />
+              </div>
+              <div class="seven-mid-20">
+                <img src="./assets/parts/3circles.webp" />
+                <img src="./assets/parts/3parts.webp" />
+              </div>
+              <div class="seven-right-20">
+                <img src="./assets/parts/control.webp" />
+              </div>
             </div>
             <div class="container-section-3-seven-text">
-              <h2>Trust the Quality, Love the Look</h2>
-              <p>Creatives spend hours editing and their tools should withstand every minute. That’s why each module is made from the highest quality materials including CNC-machined aluminum, neodymium magnets and gold-plated connections that will not only look beautiful on your desk but will also last.</p>
-              <button>shop now</button>
+              <div class="seven-container">
+                <h2>Trust the Quality, Love the Look</h2>
+                <p>
+                  Creatives spend hours editing and their tools should withstand
+                  every minute. That’s why each module is made from the highest
+                  quality materials including CNC-machined aluminum, neodymium
+                  magnets and gold-plated connections that will not only look
+                  beautiful on your desk but will also last.
+                </p>
+                <button>shop now</button>
+              </div>
             </div>
           </div>
         </section>
@@ -216,137 +290,190 @@
           <div class="container-section-4-texts">
             <h2>Made just for You</h2>
             <p>
-              Creative Console was designed with your workflow in mind. Pre-loaded functionality and direct software integrations perfectly combine to improve editing and increase efficiency. Select your workflow below to explore now.
+              Creative Console was designed with your workflow in mind.
+              Pre-loaded functionality and direct software integrations
+              perfectly combine to improve editing and increase efficiency.
+              Select your workflow below to explore now.
             </p>
           </div>
-          <div class="container-section-4-slider">
-            <div class="container-section-4-one">
-              <h3>
-                Photo editing and retouching
-              </h3>
-              <p>
-                See how Creative Console can streamline your entire photo editing and retouching workflow from start to finish
-              </p>
-              <button>Learn more</button>
+          <div class="slider-wrapper">
+            <div class="container-section-4-slider" id="slider">
+              <div class="container-section-4-one section-4-one">
+                <div class="section-4-one-content">
+                  <h3>Photo editing and retouching</h3>
+                  <p>
+                    See how Creative Console can streamline your entire photo
+                    editing and retouching workflow from start to finish
+                  </p>
+                  <button>Learn more</button>
+                </div>
+              </div>
+              <div class="container-section-4-one section-4-two">
+                <div class="section-4-one-content">
+                  <h3>Video editing and filmmaking</h3>
+                  <p>
+                    Take advantage of the smoothest and fastest transport
+                    controls, effortlessly adjust Lumetri and Final Cut Pro
+                    colors, automate keyframes and more with Creative Console
+                  </p>
+                  <button>learn more</button>
+                </div>
+              </div>
+              <div class="container-section-4-one section-4-three">
+                <div class="section-4-one-content">
+                  <h3>Audio and music production</h3>
+                  <p>
+                    Real-time expressive control of your virtual instruments and
+                    6 MIDI CCs. Streamline your music composition and production
+                    workflows with Creative Console.
+                  </p>
+                  <button>learn more</button>
+                </div>
+              </div>
+              <div class="container-section-4-one section-4-four">
+                <div class="section-4-one-content">
+                  <h3>Virtual production</h3>
+                  <p>
+                    Creative Console provides familiar tools to filmmakers and
+                    crews to tell their stories in a variety of virtual
+                    production environments
+                  </p>
+                  <button>learn more</button>
+                </div>
+              </div>
             </div>
-            <div class="container-section-4-two">
-              <h3>Video editing and filmmaking</h3>
-              <p>
-                Take advantage of the smoothest and fastest transport controls, effortlessly adjust Lumetri and Final Cut Pro colors, automate keyframes and more with Creative Console 
-              </p>
-              <button>
-                learn more
-              </button>
-            </div>
-            <div class="container-section-4-three">
-              <h2>Audio and music production</h2>
-              <p>
-                Real-time expressive control of your virtual instruments and 6 MIDI CCs. Streamline your music composition and production workflows with Creative Console.
-              </p>
-              <button>
-                learn more
-              </button>
-            </div>
-            <div class="container-section-4-four">
-              <h2>Virtual production</h2>
-              <p>
-                Creative Console provides familiar tools to filmmakers and crews to tell their stories in a variety of virtual production environments
-              </p>
-              <button>
-                learn more
-              </button>
-            </div>
+            <div class="previous-button" id="button-left">&lt;</div>
+            <div class="next-button" id="button-right">&gt;</div>
           </div>
         </section>
         <section class="section-5">
           <div class="container-section-5-texts">
             <h2>Powerful Native Integrations</h2>
-            <p>Integrates directly to your favorite software for the highest level of precision and control.</p>
+            <p>
+              Integrates directly to your favorite software for the highest
+              level of precision and control.
+            </p>
           </div>
           <div class="container-section-5-tools">
-            <img src="./assets/parts/1plus2.webp">
-            <img src="./assets/logo.jpg">
-            <img src="./assets/logo.jpg">
-            <img src="./assets/logo.jpg">
+            <img src="./assets/parts/1plus2.webp" class="tools-container-5" />
+            <div class="tools-container">
+              <img src="./assets/logo.jpg" class="icon-tool" />
+              <img src="./assets/logo.jpg" class="icon-tool" />
+            </div>
           </div>
         </section>
         <section class="section-6">
           <div class="container-section-6-img">
-            <img src="./assets/better-editing-raw-dark.jpg">
-          </div>
-          <div class="container-section-6-text">
-            <!-- Garantia -->
-            <img src="./assets/logo.jpg"> 
-            <p>
-              We understand that everyone’s workflow is different, and even the most adaptable tool ever may not always fit. That’s why you can try Monogram Creative Console in your own workflow for 30 days. If it does not improve your editing experience, you can return it for a full refund.
-            </p>
-            <button>Try now</button>
+            <img src="./assets/better-editing-raw-dark.jpg" />
+            <div class="container-section-6-text">
+              <!-- Garantia -->
+              <img
+                class="section-6-logo"
+                src="./assets/png-transparent-sport-logo-football-sports-logos-text-sport-logo-thumbnail.png"
+              />
+              <p>
+                We understand that everyone’s workflow is different, and even
+                the most adaptable tool ever may not always fit. That’s why you
+                can try Monogram Creative Console in your own workflow for 30
+                days. If it does not improve your editing experience, you can
+                return it for a full refund.
+              </p>
+              <button>Try now</button>
+            </div>
           </div>
         </section>
         <section class="section-7">
-          <div class="container-section-7-one">
-            <h2>Trusted by Photo and Video Professionals</h2>
-            <img src="./assets/avatars/avatar-mattworkman-headshot-cinetracer.webp">
-            <p>
-              " Monogram gives filmmakers precise and intuitive control over virtual cameras and lighting in Cine Tracer. For Unreal Engine Virtual Production users and developers, the Monogram Creator app and UE4 makes integration seamless and easy through the Blueprint Scripting system.
-            </p>
-            <p>
-              - Matt Workman, Virtual Production Cinematographer and Developer, CineTracer
-            </p>
+          <div class="section-7-slider-title">
+            <div class="title-wrapper">
+              <h2>Trusted by Photo and Video Professionals</h2>
+            </div>
+          </div>
+          <div class="section-7-slider">
+            <div class="container-section-7-one">
+              <img
+                src="./assets/avatars/avatar-mattworkman-headshot-cinetracer.webp"
+              />
+              <p>
+                " Monogram gives filmmakers precise and intuitive control over
+                virtual cameras and lighting in Cine Tracer. For Unreal Engine
+                Virtual Production users and developers, the Monogram Creator
+                app and UE4 makes integration seamless and easy through the
+                Blueprint Scripting system.
+              </p>
+              <p>
+                - Matt Workman, Virtual Production Cinematographer and
+                Developer, CineTracer
+              </p>
+            </div>
+            <div class="container-section-7-two">
+              <img
+                src="./assets/avatars/avatar-gary-marshall-headshot-thethirdfloor.webp"
+              />
+              <p>
+                Tactile tools like Monogram will help us pave the way for new
+                and interactive experiences where both technical and
+                non-technical crew members can easily and actively participate
+                in the filmmaking processs thereby streamlining production time.
+              </p>
+              <p>
+                -Gary Marshall, Creative Technology Supervisor, Visual Effects
+                Designer, Third Floor
+              </p>
+            </div>
+            <div class="container-section-7-three">
+              <img
+                src="./assets/avatars/avatar-gideon-ferber-headshot-ross-video.webp"
+              />
+              <p>
+                Creative Console offers operators a highly flexible control
+                solution, and the ability to pick and choose modules and change
+                them as needed is very elegant. Creative Console is a very
+                easy-to-use and intuitive system that's perfect for broadcasters
+                working with Ross Video's UX control platform and Voyager
+                graphics rendering solution
+              </p>
+              <p>
+                - Gideon Ferber, Ross Video's Director of Virtual Solutions,
+                Ross Video
+              </p>
+            </div>
+            <div class="container-section-7-four">
+              <img
+                src="./assets/avatars/avatar-aj-scuitto-magnopus-headshot-2020.webp"
+              />
+              <p>
+                " Monogram's tactile, precision tools are one of the essential
+                tools we use to bring a physical touch tothe digital worlds
+              </p>
+              <p>
+                -AJ Sciutto, Virtual Production Producer, Magnopus / Lion King
+                project
+              </p>
+            </div>
+          </div>
 
-          </div>
-          <div class="container-section-7-two">
-            <img src="./assets/avatars/avatar-gary-marshall-headshot-thethirdfloor.webp">
-            <p>
-              Tactile tools like Monogram will help us pave the way for new and interactive experiences where both technical and non-technical crew members can easily and actively participate in the filmmaking processs thereby streamlining production time.
-            </p>
-            <p>
-              -Gary Marshall, Creative Technology Supervisor, Visual Effects Designer, Third Floor
-            </p>
-          </div>
-          <div class="container-section-7-three">
-            <img src="./assets/avatars/avatar-gideon-ferber-headshot-ross-video.webp">
-            <p>
-              Creative Console offers operators a highly flexible control solution, and the ability to pick and choose modules and change them as needed is very elegant. Creative Console is a very easy-to-use and intuitive system that's perfect for broadcasters working with Ross Video's UX control platform and Voyager graphics rendering solution
-            </p>
-            <p>
-              - Gideon Ferber, Ross Video's Director of Virtual Solutions, Ross Video
-            </p>
-          </div>
-          <div class="container-section-7-four">
-            <img src="./assets/avatars/avatar-aj-scuitto-magnopus-headshot-2020.webp">
-            <p>
-              " Monogram's tactile, precision tools are one of the essential tools we use to bring a physical touch tothe digital worlds
-            </p>
-            <p>
-              -AJ Sciutto, Virtual Production Producer, Magnopus / Lion King project
-            </p>
-          </div>
           <div class="container-section-7-brands">
-            <h2> as seen on</h2>
+            <h2>as seen on</h2>
             <div class="brands-items">
-              <img src="./assets/grid/core77-3.webp">
-              <img src="./assets/grid/dpreview-logo.webp">
-              <img src="./assets/grid/fstoppers-logo.webp">
-              <img src="./assets/grid/input-mag.webp">
-              <img src="./assets/grid/medium-logo.webp">
-              <img src="./assets/grid/mono-youtube.webp">
-              <img src="./assets/grid/mono_web_asseenon_logo_slr.webp">
-              <img src="./assets/grid/slider-joiner.webp">
+              <img src="./assets/grid/core77-3.webp" />
+              <img src="./assets/grid/dpreview-logo.webp" />
+              <img src="./assets/grid/fstoppers-logo.webp" />
+              <img src="./assets/grid/input-mag.webp" />
+              <img src="./assets/grid/medium-logo.webp" />
+              <img src="./assets/grid/mono-youtube.webp" />
+              <img src="./assets/grid/mono_web_asseenon_logo_slr.webp" />
+              <img src="./assets/grid/slider-joiner.webp" />
             </div>
           </div>
           <div class="container-section-7-console">
-            <img src="./assets/grid/shop-cta-xl.webp">
+            <img src="./assets/grid/shop-cta-xl.webp" />
             <div class="container-section-7-texts">
-              <h3>
-                Experience it Yourself
-              </h3>
+              <h3>Experience it Yourself</h3>
               <p>
-                Level up your productivity with high-quality tools trusted by creative professionals.
+                Level up your productivity with high-quality tools trusted by
+                creative professionals.
               </p>
-              <button>
-                shop now
-              </button>
+              <button>shop now</button>
             </div>
           </div>
         </section>
@@ -355,40 +482,52 @@
     <footer>
       <div class="footer-container">
         <div class="footer-monogram">
-          <h4>
-            Monogram
-          </h4>
-          <p>
-            305 King St. W.
-            Suite 502
-            Kitchener, ON
-            Canada
-          </p>
+          <h4>Monogram</h4>
+          <p>305 King St. W. Suite 502 Kitchener, ON Canada</p>
         </div>
         <div class="footer-quick-links">
-          <h4>
-            Quick Links
-          </h4>
+          <h4>Quick Links</h4>
           <a href="#">Home</a>
           <a href="#">How it Works</a>
           <a href="#">Shop</a>
           <a href="#">Download</a>
         </div>
         <div class="footer-help">
-
-        </div>
-        <div class="footer-information">
           <h4>Help</h4>
           <a href="#">FAQs</a>
           <a href="#">Support Center</a>
           <a href="#">Shipping and Sales</a>
           <a href="#">Palette Support</a>
-
+        </div>
+        <div class="footer-information">
+          <h4>Information</h4>
+          <a href="#"> About Us </a>
+          <a href="#"> Work with us </a>
+          <a href="#"> Privacy Policy</a>
+          <a href="#"> Terms of Use </a>
+          <a href="#"> Terms of Sale </a>
+          <a href="#"> Press Kit </a>
         </div>
         <div class="footer-suscribe">
-
+          <h4>Subscribe to Monogram</h4>
+          <p>
+            Master productivity with Creative Console and get all the latest
+            Monogram news.
+          </p>
+          <div class="footer-suscribe-form">
+            <input type="text" class="input-text" />
+            <input type="submit" class="input-submit" />
+          </div>
+          <div class="footer-suscribe-icons">
+            <span>one</span>
+            <span>two</span>
+            <span>three</span>
+            <span>four</span>
+          </div>
+          <p>Made by Jorge Luis Soltero Rivera</p>
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
