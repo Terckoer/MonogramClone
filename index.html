@@ -253,35 +253,41 @@
             </div>
           </div>
           <div class="container-section-3-seven" id="id-three-hidden-five">
+            <div class="section-3-observed" id="id-s3-observed"></div>
             <div
               class="container-section-3-seven-img"
               id="id-three-hidden-five-2"
             >
-              <div class="seven-left-20" id="id-left-20">
-                <img src="./assets/parts/circle.webp" />
-              </div>
-              <div class="seven-left-10">
-                <img src="./assets/parts/1plus2.webp" />
-              </div>
-              <div class="seven-mid-20">
-                <img src="./assets/parts/3circles.webp" />
-                <img src="./assets/parts/3parts.webp" />
-              </div>
-              <div class="seven-right-20">
-                <img src="./assets/parts/control.webp" />
-              </div>
-            </div>
-            <div class="container-section-3-seven-text">
-              <div class="seven-container">
-                <h2>Trust the Quality, Love the Look</h2>
-                <p>
-                  Creatives spend hours editing and their tools should withstand
-                  every minute. That’s why each module is made from the highest
-                  quality materials including CNC-machined aluminum, neodymium
-                  magnets and gold-plated connections that will not only look
-                  beautiful on your desk but will also last.
-                </p>
-                <button>shop now</button>
+              <div class="container-s3-wrapper">
+                <div class="s3-parts-container" id="id-s3-parts">
+                  <div class="seven-left-20" id="id-left-20">
+                    <img src="./assets/parts/circle.webp" />
+                  </div>
+                  <div class="seven-left-10" id="id-left-10">
+                    <img src="./assets/parts/1plus2.webp" />
+                  </div>
+                  <div class="seven-mid-20">
+                    <img src="./assets/parts/3circles.webp" id="id-mid-top" />
+                    <img src="./assets/parts/3parts.webp" id="id-mid-bottom" />
+                  </div>
+                  <div class="seven-right-20">
+                    <img src="./assets/parts/control.webp" id="id-right-20" />
+                  </div>
+                </div>
+                <div class="container-section-3-seven-text" id="id-s3-texts">
+                  <div class="seven-container">
+                    <h2>Trust the Quality, Love the Look</h2>
+                    <p>
+                      Creatives spend hours editing and their tools should
+                      withstand every minute. That’s why each module is made
+                      from the highest quality materials including CNC-machined
+                      aluminum, neodymium magnets and gold-plated connections
+                      that will not only look beautiful on your desk but will
+                      also last.
+                    </p>
+                    <button>shop now</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -347,26 +353,57 @@
           </div>
         </section>
         <section class="section-5">
-          <div class="container-section-5-texts">
-            <h2>Powerful Native Integrations</h2>
-            <p>
-              Integrates directly to your favorite software for the highest
-              level of precision and control.
-            </p>
-          </div>
-          <div class="container-section-5-tools">
-            <img src="./assets/parts/1plus2.webp" class="tools-container-5" />
-            <div class="tools-container">
-              <img src="./assets/logo.jpg" class="icon-tool" />
-              <img src="./assets/logo.jpg" class="icon-tool" />
+          <div class="section-5-100vh">
+            <div class="section-5-sticky" id="id-tools-sticky">
+              <div class="container-section-5-texts">
+                <h2>Powerful Native Integrations</h2>
+                <p>
+                  Integrates directly to your favorite software for the highest
+                  level of precision and control.
+                </p>
+              </div>
+              <div class="container-section-5-tools" id="id-tool-container">
+                <img
+                  src="./assets/core-integrations-fg.png"
+                  class="tools-container-5"
+                  id="id-tools-fixed"
+                />
+                <div class="container-section-5-overflow">
+                  <div id="id-lorem">
+                    <img src="/assets/tools/lrc.png" />
+                    <img src="/assets/tools/pr.png" />
+                    <img src="/assets/tools/ps.png" />
+                    <img src="/assets/tools/fc.png" />
+                    <img src="/assets/tools/c1.png" />
+                    <img src="/assets/tools/ae.png" />
+                    <img src="/assets/tools/au.png" />
+                    <img src="/assets/tools/ur.png" />
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="tools-container" id="id-tool-container-icons"></div>
           </div>
         </section>
         <section class="section-6">
-          <div class="container-section-6-img">
-            <img src="./assets/better-editing-raw-dark.jpg" />
-            <div class="container-section-6-text">
-              <!-- Garantia -->
+          <div class="section-6-content" id="id-overflow-content">
+            <div class="overflow-layer-1" id="id-overflow-1">
+              <div class="container-section-6-layer">
+                <img
+                  class="container-section-6-hero"
+                  src="/assets/better-editing-raw-dark.jpg"
+                />
+              </div>
+            </div>
+            <div class="overflow-layer" id="id-overflow">
+              <div class="container-section-6-layer">
+                <img class="container-section-6-hero" src="/assets/hero.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="section-6-100-vh" id="id-100-vh"></div>
+          <div class="container-section-6-img" id="id-section-6-img">
+            <div class="container-section-6-text" id="id-section-6-texts">
               <img
                 class="section-6-logo"
                 src="./assets/png-transparent-sport-logo-football-sports-logos-text-sport-logo-thumbnail.png"
@@ -388,86 +425,116 @@
               <h2>Trusted by Photo and Video Professionals</h2>
             </div>
           </div>
-          <div class="section-7-slider">
+          <div class="section-7-slider" id="slider-two">
             <div class="container-section-7-one">
               <img
                 src="./assets/avatars/avatar-mattworkman-headshot-cinetracer.webp"
               />
-              <p>
-                " Monogram gives filmmakers precise and intuitive control over
-                virtual cameras and lighting in Cine Tracer. For Unreal Engine
-                Virtual Production users and developers, the Monogram Creator
-                app and UE4 makes integration seamless and easy through the
-                Blueprint Scripting system.
-              </p>
-              <p>
-                - Matt Workman, Virtual Production Cinematographer and
-                Developer, CineTracer
-              </p>
+              <div class="slider-text-content">
+                <p>
+                  " Monogram gives filmmakers precise and intuitive control over
+                  virtual cameras and lighting in Cine Tracer. For Unreal Engine
+                  Virtual Production users and developers, the Monogram Creator
+                  app and UE4 makes integration seamless and easy through the
+                  Blueprint Scripting system.
+                </p>
+                <p>
+                  - Matt Workman, Virtual Production Cinematographer and
+                  Developer, CineTracer
+                </p>
+              </div>
             </div>
-            <div class="container-section-7-two">
+            <div class="container-section-7-one">
               <img
                 src="./assets/avatars/avatar-gary-marshall-headshot-thethirdfloor.webp"
               />
-              <p>
-                Tactile tools like Monogram will help us pave the way for new
-                and interactive experiences where both technical and
-                non-technical crew members can easily and actively participate
-                in the filmmaking processs thereby streamlining production time.
-              </p>
-              <p>
-                -Gary Marshall, Creative Technology Supervisor, Visual Effects
-                Designer, Third Floor
-              </p>
+              <div class="slider-text-content">
+                <p>
+                  " Tactile tools like Monogram will help us pave the way for
+                  new and interactive experiences where both technical and
+                  non-technical crew members can easily and actively participate
+                  in the filmmaking processs thereby streamlining production
+                  time.
+                </p>
+                <p>
+                  -Gary Marshall, Creative Technology Supervisor, Visual Effects
+                  Designer, Third Floor
+                </p>
+              </div>
             </div>
-            <div class="container-section-7-three">
+            <div class="container-section-7-one">
               <img
                 src="./assets/avatars/avatar-gideon-ferber-headshot-ross-video.webp"
               />
-              <p>
-                Creative Console offers operators a highly flexible control
-                solution, and the ability to pick and choose modules and change
-                them as needed is very elegant. Creative Console is a very
-                easy-to-use and intuitive system that's perfect for broadcasters
-                working with Ross Video's UX control platform and Voyager
-                graphics rendering solution
-              </p>
-              <p>
-                - Gideon Ferber, Ross Video's Director of Virtual Solutions,
-                Ross Video
-              </p>
+              <div class="slider-text-content">
+                <p>
+                  " Creative Console offers operators a highly flexible control
+                  solution, and the ability to pick and choose modules and
+                  change them as needed is very elegant. Creative Console is a
+                  very easy-to-use and intuitive system that's perfect for
+                  broadcasters working with Ross Video's UX control platform and
+                  Voyager graphics rendering solution.
+                </p>
+                <p>
+                  - Gideon Ferber, Ross Video's Director of Virtual Solutions,
+                  Ross Video
+                </p>
+              </div>
             </div>
-            <div class="container-section-7-four">
+            <div class="container-section-7-one">
               <img
                 src="./assets/avatars/avatar-aj-scuitto-magnopus-headshot-2020.webp"
               />
-              <p>
-                " Monogram's tactile, precision tools are one of the essential
-                tools we use to bring a physical touch tothe digital worlds
-              </p>
-              <p>
-                -AJ Sciutto, Virtual Production Producer, Magnopus / Lion King
-                project
-              </p>
+              <div class="slider-text-content">
+                <p>
+                  " Monogram's tactile, precision tools are one of the essential
+                  tools we use to bring a physical touch tothe digital worlds
+                </p>
+                <p>
+                  -AJ Sciutto, Virtual Production Producer, Magnopus / Lion King
+                  project
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="container-section-7-brands">
+          <div class="previous-button-two" id="button-left-two">&lt;</div>
+          <div class="next-button-two" id="button-right-two">&gt;</div>
+        </section>
+        <section class="section-8">
+          <div class="section-8-title">
             <h2>as seen on</h2>
-            <div class="brands-items">
-              <img src="./assets/grid/core77-3.webp" />
-              <img src="./assets/grid/dpreview-logo.webp" />
-              <img src="./assets/grid/fstoppers-logo.webp" />
-              <img src="./assets/grid/input-mag.webp" />
-              <img src="./assets/grid/medium-logo.webp" />
-              <img src="./assets/grid/mono-youtube.webp" />
-              <img src="./assets/grid/mono_web_asseenon_logo_slr.webp" />
-              <img src="./assets/grid/slider-joiner.webp" />
-            </div>
           </div>
-          <div class="container-section-7-console">
-            <img src="./assets/grid/shop-cta-xl.webp" />
-            <div class="container-section-7-texts">
+          <div class="container-section-8-brands">
+            <a href="#">
+              <img src="./assets/grid/slider-joiner.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/core77-3.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/medium-logo.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/dpreview-logo.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/fstoppers-logo.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/input-mag.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/mono-youtube.webp" />
+            </a>
+            <a href="#">
+              <img src="./assets/grid/mono_web_asseenon_logo_slr.webp" />
+            </a>
+          </div>
+          <div class="container-section-8-console">
+            <div class="section-8-img">
+              <img src="./assets/grid/shop-cta-xl.webp" />
+            </div>
+            <div class="container-section-8-texts">
               <h3>Experience it Yourself</h3>
               <p>
                 Level up your productivity with high-quality tools trusted by
@@ -515,14 +582,23 @@
             Monogram news.
           </p>
           <div class="footer-suscribe-form">
-            <input type="text" class="input-text" />
-            <input type="submit" class="input-submit" />
+            <input type="text" class="input-text" placeholder="Email Address" />
+            <input type="submit" class="input-submit" value="Submit" />
           </div>
+          <div class="footer-contact-me"><h3>Contact me</h3></div>
           <div class="footer-suscribe-icons">
-            <span>one</span>
-            <span>two</span>
-            <span>three</span>
-            <span>four</span>
+            <a href="https://github.com/Terckoer"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://www.codewars.com/users/terckoer"
+              ><i class="fas fa-code"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jorgesoltero/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCSBxnz1oWaM0B0BhMlxskeA"
+              ><i class="fab fa-youtube"></i
+            ></a>
           </div>
           <p>Made by Jorge Luis Soltero Rivera</p>
         </div>
