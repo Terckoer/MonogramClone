@@ -80,73 +80,6 @@ const revealTexts = () =>{
 }
 
 
-/* Buttons para el primer slider */
-
-const next = () =>{
-  let $lastSlide = document.querySelectorAll('.container-section-4-one')[0]; 
-  $slider.style.marginLeft = '-120vw';
-  $slider.style.transition = 'all 0.5s';
-  setTimeout(function(){
-  $slider.style.transition = 'none';
-    $slider.insertAdjacentElement('beforeend', $lastSlide);
-    $slider.style.marginLeft ='-52vw';
-  },400);
-}
-
-const previous = () =>{
-  let $lastSlide = document.querySelectorAll('.container-section-4-one')[3]; 
-  $slider.style.marginLeft = '16vw';
-  $slider.style.transition = 'all 0.5s';
-  setTimeout(function (){
-    $slider.style.transition = 'none';
-    $slider.insertAdjacentElement('afterbegin', $lastSlide);
-    $slider.style.marginLeft ='-52vw';
-  },500);
-}
-
-$buttonRight.addEventListener('click', () => next());
-$buttonLeft.addEventListener('click', () => previous());
-
-//Termina
-
-/* Buttons para el segundo slider*/
-
-const nextTwo = () =>{
-  let $lastSlide = document.querySelectorAll('.container-section-7-one')[0]; 
-  $sliderTwo.style.marginLeft = '-100vw';
-  $sliderTwo.style.transition = 'all 0.5s';
-  setTimeout(function(){
-    $sliderTwo.style.transition = 'none';
-    $sliderTwo.insertAdjacentElement('beforeend', $lastSlide);
-    $sliderTwo.style.marginLeft ='0vw';
-  },500);
-}
-
-const previousTwo = () =>{
-  let $lastSlide = document.querySelectorAll('.container-section-7-one')[3]; 
-  $sliderTwo.style.marginLeft = '100vw';
-  $sliderTwo.style.transition = 'all 0.5s';
-  setTimeout(function (){
-    $sliderTwo.style.transition = 'none';
-    $sliderTwo.insertAdjacentElement('afterbegin', $lastSlide);
-    $sliderTwo.style.marginLeft ='0vw';
-  },500);
-}
-
-$buttonRightTwo.addEventListener('click', () => nextTwo());
-$buttonLeftTwo.addEventListener('click', () => previousTwo());
-
-
-
-//
-
-document.addEventListener("scroll", function () {
-  textHidden();
-  imageOpacity();
-  revealTexts();
-  
-});
-
 //OBSERVERS FUNCTIONS
 const hideOnScroll = (entries, observer) =>{
   if(entries[0].intersectionRatio>0){
@@ -257,7 +190,7 @@ const hideOnScroll5 = (entries, observer) =>{
 let subiendo = false;
 const hideOnScroll6 = (entries, observer) =>{
   let intersection = entries[0].intersectionRatio;
-  if(intersection>0.015){
+  if(intersection>0.005){
     const $left20 = document.getElementById('id-left-20');
     const $left10 = document.getElementById('id-left-10');
     const $midTop = document.getElementById('id-mid-top');
@@ -265,48 +198,55 @@ const hideOnScroll6 = (entries, observer) =>{
     const $right20 = document.getElementById('id-right-20');
     const $texts = document.getElementById('id-s3-texts');
     const $parts = document.getElementById('id-s3-parts');
+    $midTop.style.opacity = '1';
+    
     if(intersection<0.95){
       if(subiendo){
         
           $texts.style.transform = 'translateY(-15vh)';
-          $texts.style.transition = 'all 0.3s ease';
+          $texts.style.transition = 'all 0.1s ease';
           $parts.style.transform = 'translateY(5vh)';
-          $parts.style.transition = 'all 0.3s ease';
+          $parts.style.transition = 'all 0.1s ease';
           subiendo = false;
       }else{
 
-        $left20.style.transition = 'all 0.5s ease';
+        $left20.style.transition = 'all 0.3s ease';
         $left20.style.transform = `translateX(${-100+(100*intersection)}vw)`;
-        $left10.style.transition = 'all 0.5s ease';
-        $left10.style.transform = `translateY(${50-((100*intersection)/2)}vw)`;
-        $midTop.style.transition = 'all 0.5s ease';
-        $midTop.style.transform = `translateY(${-75+((100*intersection)/4)*3}vw)`;
-        $midBottom.style.transition = 'all 0.5s ease';
-        $midBottom.style.transform = `translateY(${100-(100*intersection)}vw)`;
-        $right20.style.transition = 'all 0.5s ease';
+        $left10.style.transition = 'all 0.3s ease';
+        $left10.style.transform = `translateY(${50-((100*intersection)/2)}vh)`;
+        $midTop.style.transition = 'all 0.3s ease';
+        $midTop.style.transform = `translateY(${-70+((70*intersection))}vw)`;
+        $midBottom.style.transition = 'all 0.3s ease';
+        $midBottom.style.transform = `translateY(${100-(100*intersection)}vh)`;
+        $right20.style.transition = 'all 0.3s ease';
         $right20.style.transform = `translateX(${100-(100*intersection)}vw)`; 
         console.log("Gaaaaa!!: "+(intersection))
       }
     }
     else{
-      $left20.style.transition = 'all 0.5s ease';
+      $left20.style.transition = 'all 0.3s ease';
       $left20.style.transform = `translateX(${0}vw)`;
-      $left10.style.transition = 'all 0.5s ease';
-      $left10.style.transform = `translateY(${0}vw)`;
-      $midTop.style.transition = 'all 0.5s ease';
-      $midTop.style.transform = `translateY(${0}vw)`;
-      $midBottom.style.transition = 'all 0.5s ease';
-      $midBottom.style.transform = `translateY(${0}vw)`;
-      $right20.style.transition = 'all 0.5s ease';
+      $left10.style.transition = 'all 0.3s ease';
+      $left10.style.transform = `translateY(${0}vh)`;
+      $midTop.style.transition = 'all 0.3s ease';
+      $midTop.style.transform = `translateY(${0}vh)`;
+      $midBottom.style.transition = 'all 0.3s ease';
+      $midBottom.style.transform = `translateY(${0}vh)`;
+      $right20.style.transition = 'all 0.3s ease';
       $right20.style.transform = `translateX(${0}vw)`;
       setTimeout(function(){
         $texts.style.transform = 'translateY(10vh)';
-        $texts.style.transition = 'all 0.3s ease';
+        $texts.style.transition = 'all 0.2s ease';
         $parts.style.transform = 'translateY(-20vh)';
-        $parts.style.transition = 'all 0.3s ease';
-      },500);
+        $parts.style.transition = 'all 0.2s ease';
+      },300);
       subiendo=true;
     }
+  }else{
+    const $midTop = document.getElementById('id-mid-top');
+    $midTop.style.opacity = '0';
+    $midTop.style.transition = 'all 0s linear';
+
   }
 }
 
@@ -453,4 +393,69 @@ observerOverflowBlue.observe($overflowContentBlue);
 observerKeepFixedTheTool.observe($observerKeepFixedTheTool);
 
 
-console.log("Si estoy entrando al script" + vh);
+
+/* Buttons para el primer slider */
+
+const next = () =>{
+  let $lastSlide = document.querySelectorAll('.container-section-4-one')[0]; 
+  $slider.style.marginLeft = '-120vw';
+  $slider.style.transition = 'all 0.5s';
+  setTimeout(function(){
+  $slider.style.transition = 'none';
+    $slider.insertAdjacentElement('beforeend', $lastSlide);
+    $slider.style.marginLeft ='-52vw';
+  },400);
+}
+
+const previous = () =>{
+  let $lastSlide = document.querySelectorAll('.container-section-4-one')[3]; 
+  $slider.style.marginLeft = '16vw';
+  $slider.style.transition = 'all 0.5s';
+  setTimeout(function (){
+    $slider.style.transition = 'none';
+    $slider.insertAdjacentElement('afterbegin', $lastSlide);
+    $slider.style.marginLeft ='-52vw';
+  },500);
+}
+
+$buttonRight.addEventListener('click', () => next());
+$buttonLeft.addEventListener('click', () => previous());
+
+//Termina
+
+/* Buttons para el segundo slider*/
+
+const nextTwo = () =>{
+  let $lastSlide = document.querySelectorAll('.container-section-7-one')[0]; 
+  $sliderTwo.style.marginLeft = '-100vw';
+  $sliderTwo.style.transition = 'all 0.5s';
+  setTimeout(function(){
+    $sliderTwo.style.transition = 'none';
+    $sliderTwo.insertAdjacentElement('beforeend', $lastSlide);
+    $sliderTwo.style.marginLeft ='0vw';
+  },500);
+}
+
+const previousTwo = () =>{
+  let $lastSlide = document.querySelectorAll('.container-section-7-one')[3]; 
+  $sliderTwo.style.marginLeft = '100vw';
+  $sliderTwo.style.transition = 'all 0.5s';
+  setTimeout(function (){
+    $sliderTwo.style.transition = 'none';
+    $sliderTwo.insertAdjacentElement('afterbegin', $lastSlide);
+    $sliderTwo.style.marginLeft ='0vw';
+  },500);
+}
+
+$buttonRightTwo.addEventListener('click', () => nextTwo());
+$buttonLeftTwo.addEventListener('click', () => previousTwo());
+
+
+document.addEventListener("scroll", function () {
+  textHidden();
+  imageOpacity();
+  revealTexts();
+  
+});
+
+
