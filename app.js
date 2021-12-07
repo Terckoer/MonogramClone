@@ -27,12 +27,16 @@ for(let i=0;i<=1;i+=0.05){
 const textHidden = () => {
   const current = window.scrollY;
   const $fonts = document.querySelector(".hidden-text");
-  if(current>1000){
-
+  if(current>1500){
+    if(current<2500){
+      $fonts.style.position = 'static';
+    }else{      
+    }
   }else{
+    $fonts.style.position = 'fixed';
     $fonts.style.transform = `scale(${1 - 0.0005 * current},${
       1 - 0.0005 * current
-    }) translateY(${current * 1.1}px)`;
+    })`;
     $fonts.style.opacity = `${1 - 0.0025 * current}`;
     $fonts.style.transition = `all 25ms `;
   }
@@ -311,6 +315,7 @@ const keepFixedTheTool = (entries, observer) =>{
   }
 }
 
+
 //OBSERVERS
 const observer = new IntersectionObserver(hideOnScroll, {
   root:null,
@@ -369,7 +374,6 @@ const observerKeepFixedTheTool = new IntersectionObserver(keepFixedTheTool, {
   threshold:arr
 });
 
-
 //ELEMENTS TO
 const $texts =document.getElementById('id-three-hidden');
 const $texts2 =document.getElementById('id-three-hidden-two');
@@ -391,7 +395,6 @@ observer6.observe($texts6);//THIS IS THE UNION
 observerOverflow.observe($overflowContent);
 observerOverflowBlue.observe($overflowContentBlue);
 observerKeepFixedTheTool.observe($observerKeepFixedTheTool);
-
 
 
 /* Buttons para el primer slider */
@@ -455,7 +458,10 @@ document.addEventListener("scroll", function () {
   textHidden();
   imageOpacity();
   revealTexts();
-  
+
 });
 
+setInterval(() => {
+  nextTwo();
+}, 5000);
 
