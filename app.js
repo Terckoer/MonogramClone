@@ -96,8 +96,8 @@ const hideOnScroll = (entries, observer) =>{
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
     $texts.style.transition = 'all 0.3s ease';
-    $image.style.transform = `scale(${escala}) translateX(${intersectionRate*500}px)`;
-    $texts.style.transform = `scale(${escala}) translateX(-${intersectionRate*500}px)`;
+    $image.style.transform = `scale(${escala}) `;
+    $texts.style.transform = `scale(${escala}) `;
   }else{
     const $texts = document.getElementById('id-first-hidden');
     const $image = document.getElementById('id-first-hidden-1');
@@ -118,8 +118,8 @@ const hideOnScroll2 = (entries, observer) =>{
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
     $texts.style.transition = 'all 0.3s ease';
-    $image.style.transform = `scale(${escala}) translateX(${intersectionRate*500}px)`;
-    $texts.style.transform = `scale(${escala}) translateX(-${intersectionRate*500}px)`;
+    $image.style.transform = `scale(${escala}) `;
+    $texts.style.transform = `scale(${escala}) `;
   }else{
     const $texts = document.getElementById('id-first-hidden-1-two');
     const $image = document.getElementById('id-first-hidden-two');
@@ -139,8 +139,8 @@ const hideOnScroll3 = (entries, observer) =>{
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
     $texts.style.transition = 'all 0.3s ease';
-    $image.style.transform = `scale(${escala}) translateX(${intersectionRate*500}px)`;
-    $texts.style.transform = `scale(${escala}) translateX(-${intersectionRate*500}px)`;
+    $image.style.transform = `scale(${escala}) `;
+    $texts.style.transform = `scale(${escala}) `;
   }else{
     const $texts = document.getElementById('id-first-hidden-three');
     const $image = document.getElementById('id-first-hidden-1-three');
@@ -160,8 +160,8 @@ const hideOnScroll4 = (entries, observer) =>{
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
     $texts.style.transition = 'all 0.3s ease';
-    $image.style.transform = `scale(${escala}) translateX(-${intersectionRate*500}px)`;
-    $texts.style.transform = `scale(${escala}) translateX(${intersectionRate*50}px)`;
+    $image.style.transform = `scale(${escala}) `;
+    $texts.style.transform = `scale(${escala}) `;
   }else{
     const $texts = document.getElementById('id-first-hidden-1-four');
     const $image = document.getElementById('id-first-hidden-four');
@@ -181,8 +181,8 @@ const hideOnScroll5 = (entries, observer) =>{
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
     $texts.style.transition = 'all 0.3s ease';
-    $image.style.transform = `scale(${escala}) translateX(${intersectionRate*200}px)`;
-    $texts.style.transform = `scale(${escala}) translateX(-${intersectionRate*200}px)`;
+    $image.style.transform = `scale(${escala}) `;
+    $texts.style.transform = `scale(${escala}) `;
   }else{
     const $texts = document.getElementById('id-first-hidden-five');
     const $image = document.getElementById('id-first-hidden-1-five');
@@ -207,9 +207,9 @@ const hideOnScroll6 = (entries, observer) =>{
     if(intersection<0.95){
       if(subiendo){
         
-          $texts.style.transform = 'translateY(-15vh)';
+          $texts.style.transform = 'translateY(-40vh)';
           $texts.style.transition = 'all 0.1s ease';
-          $parts.style.transform = 'translateY(5vh)';
+          $parts.style.transform = 'translateY(0vh)';
           $parts.style.transition = 'all 0.1s ease';
           subiendo = false;
       }else{
@@ -239,9 +239,9 @@ const hideOnScroll6 = (entries, observer) =>{
       $right20.style.transition = 'all 0.3s ease';
       $right20.style.transform = `translateX(${0}vw)`;
       setTimeout(function(){
-        $texts.style.transform = 'translateY(10vh)';
+        $texts.style.transform = 'translateY(0vh)';
         $texts.style.transition = 'all 0.2s ease';
-        $parts.style.transform = 'translateY(-20vh)';
+        $parts.style.transform = 'translateY(-35vh)';
         $parts.style.transition = 'all 0.2s ease';
       },300);
       subiendo=true;
