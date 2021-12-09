@@ -224,7 +224,6 @@ const hideOnScroll6 = (entries, observer) =>{
         $midBottom.style.transform = `translateY(${100-(100*intersection)}vh)`;
         $right20.style.transition = 'all 0.3s ease';
         $right20.style.transform = `translateX(${100-(100*intersection)}vw)`; 
-        console.log("Gaaaaa!!: "+(intersection))
       }
     }
     else{
@@ -261,7 +260,6 @@ const showNewImageColor = (entries, observer) =>{
   let interseccion = entries[0].intersectionRatio;
   if(interseccion>0.1 ){
     const $overflow = document.getElementById('id-overflow');
-    console.log(interseccion)
     if(interseccion<0.94 && !isBlueActive){
       $overflow.style.width = `${interseccion*100}%`;
       $overflow.style.transition = 'all 0.1s linear';
