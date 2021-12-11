@@ -1075,7 +1075,6 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 5px solid red;
 }
 
 .section-4 .container-section-4-texts{
@@ -1112,6 +1111,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     left: 0;
     top: 0;
@@ -1119,20 +1119,19 @@ li{
 }
 
 .section-4 .container-section-4-slider{
-    width: 400%;
+    width: 66vw;
     height: 65vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3rem;
-    margin-left: -52vw;
+    overflow-x: visible;
+    white-space: nowrap;
 }
-
 
 .section-4-one{
     width: 66vw;
     height: 90%;
-    display: flex;
+    margin-right: 5vw;
+    display: inline-flex;
+    white-space: normal;
+    vertical-align: top;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1145,7 +1144,10 @@ li{
 .section-4-two{
     width: 66vw;
     height: 90%;
-    display: flex;
+    margin-right: 5vw;
+    display: inline-flex;
+    white-space: normal;
+    vertical-align: top;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1153,13 +1155,15 @@ li{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .section-4-three{
     width: 66vw;
     height: 90%;
-    display: flex;
+    margin-right: 5vw;
+    display: inline-flex;
+    white-space: normal;
+    vertical-align: top;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1167,13 +1171,15 @@ li{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .section-4-four{
     width: 66vw;
     height: 90%;
-    display: flex;
+    margin-right: 5vw;
+    display: inline-flex;
+    white-space: normal;
+    vertical-align: top;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1181,7 +1187,6 @@ li{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 
@@ -1257,7 +1262,7 @@ li{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right:14.5%;
+    right:15%;
 
 }
 .section-4 .next-button:hover{
@@ -1300,12 +1305,11 @@ li{
 }
 
 .section-5 .container-section-5-texts{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .section-5 .container-section-5-tools{
@@ -1321,34 +1325,37 @@ li{
 
 .section-5 .container-section-5-overflow{
     width: 11%;
+    min-width: 180px;
     height: 50vh;
     position: absolute;
     align-self: center;
     top: 0;
     overflow: hidden;
+
 }
 
 
 .container-section-5-tools .tools-container-5{
     width: 18%;
+    min-width: 300px;
     align-self: center;
     position: relative;
     bottom: -25vh;
 }
 
 .container-section-5-tools #id-lorem{
-    width: 98vw;
+    width: 2025px;
     position: relative;
     align-self: flex-end;
     top: 30vh;
     left: 1.5vw;
     display: flex;
-    gap: 5rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 #id-lorem img{
-    width: 125px;
-    height: 125px;
+    width: 100px;
     object-fit: cover;
 }
 #id-lorem :nth-child(8){
@@ -1381,6 +1388,7 @@ li{
     font-weight: 700;
     color: #efc2b3;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .section-5 p{
@@ -1475,8 +1483,8 @@ li{
 }
 
 .container-section-6-text img{
-    width: 40%;
-    height: 40vh;
+    width: 60%;
+    min-width: 200px;
     object-fit: cover;
 }
 
@@ -1521,7 +1529,6 @@ li{
     top: 0;
     left: 0;
     overflow: hidden;
-
 }
 
 .section-7 .section-7-slider{
@@ -1567,9 +1574,9 @@ li{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10vw;
+    padding: 5rem;
 }
 
 .section-7-slider .container-section-7-one img{
@@ -1577,6 +1584,7 @@ li{
     border-radius: 50%;
     margin-bottom: 3rem;
 }
+
 .section-7-slider .slider-text-content{
     width: 80%;
     display: flex;
@@ -1607,7 +1615,7 @@ li{
     height: 50px;
     position: absolute;
     top: 50%;
-    left: 90vw;
+    right: 5vw;
     background: rgba(255,255,255, 0.15);
     border: 2px solid gray;
     padding: 0;
@@ -1636,6 +1644,7 @@ li{
     justify-content: center;
     align-items: center;
 }
+
 .section-7 .previous-button-two:hover{
     background: rgba(255,255,255, 0.5);
     transition: all 0.4s ease;
@@ -1750,7 +1759,8 @@ li{
     width: 40%;
     height: 40vh;
     position: absolute;
-    top: 50%;
+    bottom: 5rem;
+    right: 5rem;
     padding:  0 2rem;
     display: flex;
     justify-content: flex-start;
@@ -2043,6 +2053,41 @@ footer .footer-contact-me{
     .container-section-3-one p{
         font-size: 2.5rem;
     }
+
+    .container-section-8-brands img{
+        width: 100%;
+        height: 25vh;
+    }
+
+    .section-8 .container-section-8-brands{
+        width: 90%;
+        gap:0.5rem;
+    }
+
+    .container-section-8-brands a{
+        width: 32.5%;
+        height: 25vh;
+    }
+
+    .container-section-8-brands :nth-child(7){
+        width: 50%;
+        height: 32vh;
+    }
+
+    .container-section-8-brands :nth-child(7) img{
+        width: 100%;
+        height: 32vh;
+    }
+
+    .container-section-8-brands :nth-child(8){
+        width: 48.5%;
+        height: 32vh;
+    }
+    .container-section-8-brands :nth-child(8) img{
+        width: 100%;
+        height: 32vh;
+    }
+
 }
 
 /* MEDIA QUERY  */
@@ -2207,6 +2252,75 @@ footer .footer-contact-me{
         line-height: 1.7rem;
         border-radius: 50rem;
     }
+
+
+    .section-4-one-content h3{
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    .section-4-one-content p{
+        font-size: 1rem;
+        
+    }
+
+    .section-4-one-content button{
+        font-size: 0.8rem;
+        border-radius: 2rem;
+        padding: 0.4rem 2rem;
+    }
+    .section-5 .container-section-5-texts{
+        width: 80%;
+    }
+
+    .section-5 h2{
+        font-size: 1.75rem;
+    }
+    
+    .section-5 p{
+        font-size: 1.25rem;       
+    }
+
+    .section-6 .container-section-6-text{
+        width: 60%;
+    }
+    
+    .container-section-6-text img{
+        width: 40%;
+        min-width: 200px;
+        object-fit: cover;
+    }
+    
+    .container-section-6-text p{
+        font-size: 1rem;
+    }
+    
+    .container-section-6-text button{
+        font-size: 0.85rem;
+        border-radius: 50rem;
+        padding: 0.75rem 2.5rem;
+    }
+
+    .section-7-slider .container-section-7-one{
+        padding: 2rem;
+    }
+
+    .section-7-slider .slider-text-content{
+        width: 90%;
+    }
+
+    .section-7 .previous-button-two{
+        width: 75px;
+        height: 50px;
+        top: 45%;
+        left:5vw;
+    }
+
+    .section-7 .next-button-two{
+        width: 70px;
+        height: 50px;
+        top: 45%;
+        right: 5vw;
+    }
 }
 
 /* BREAKPOINT: 768px */
@@ -2369,11 +2483,110 @@ footer .footer-contact-me{
         line-height: 1.5rem;
     }
 
+    .container-section-4-one .section-4-one-content{
+        width: 90%;
+        height: 70%;
+        padding: 1rem;
+    }
+
     .section-4-one-content h3{
         font-size: 1.25rem;
     }
     .section-4-one-content p{
         font-size: 1rem;
+    }
+
+    .section-7-slider .container-section-7-one{
+        padding: 1rem;
+    }
+
+    .section-7-slider .slider-text-content{
+        width: 95%;
+    }
+
+    .section-7-slider .slider-text-content :nth-child(1){
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin-bottom: 1.1rem;
+    }
+    .section-7-slider div :nth-child(2){
+        font-size: 1rem;    
+    }
+
+    .container-section-8-brands img{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .section-8 .container-section-8-brands{
+        width: 90%;
+        gap:0.5rem;
+    }
+
+    .container-section-8-brands a{
+        width: 32.5%;
+        min-width: 250px;
+        height: 20vh;
+    }
+    .container-section-8-brands :nth-child(7){
+        width: 49%;
+        height: 25vh;
+        max-width: 250px;
+    }
+
+    .container-section-8-brands :nth-child(7) img{
+        width: 100%;
+        height: 25vh;
+    }
+
+    .container-section-8-brands :nth-child(8){
+        width: 49%;
+        height: 25vh;
+        max-width: 250px;
+    }
+    .container-section-8-brands :nth-child(8) img{
+        width: 100%;
+        height: 25vh;
+    }
+
+    .container-section-8-console .container-section-8-texts{
+        width: 40%;
+        height: 40vh;
+        position: absolute;
+        top: 50%;
+        padding:  0 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .container-section-8-texts h3{
+        font-size: 1.85rem;
+        letter-spacing: 2px;
+        color: #1a2456;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .container-section-8-texts p{
+        font-size: 1.1rem;
+        color: #1a2456;
+        font-weight: 300;
+    }
+
+
+
+    .container-section-8-console .section-8-img{
+        width: 160%;
+    }
+
+    .container-section-8-console .container-section-8-texts{
+        width: 60%;
+        height: 40vh;
+        bottom: 3rem;
+        right: 3rem;
+        padding:  0 1rem;
     }
 
 }
@@ -2498,6 +2711,95 @@ footer .footer-contact-me{
         line-height: 1.2rem;
         border-radius: 50rem;
     }
+    
+    .container-section-4-one .section-4-one-content{
+        width: 90%;
+        height: 80%;
+        padding: 0.5rem;
+    }
+
+    .section-4-one-content h3{
+        font-size: 1rem;
+    }
+    .section-4-one-content p{
+        font-size: 0.9rem;
+    }
+
+    .container-section-5-tools .tools-container-5{
+        bottom: -10vh;
+    }
+    .section-5 .container-section-5-overflow{
+        top: -15vh;
+    }
+    .section-6 .container-section-6-text{
+        width: 80%;
+    }
+
+    .section-7-slider .slider-text-content :nth-child(1){
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-bottom: 0.7rem;
+    }
+    .section-7-slider div :nth-child(2){
+        font-size: 0.9rem;    
+    }
+
+
+    .section-8 .container-section-8-brands{
+        width: 90%;
+    }
+
+    .container-section-8-brands img{
+        width: 100%;
+        height: 10vh;
+    }
+
+    .container-section-8-brands a{
+        width: 40%;
+        min-width: 120px;
+        height: 10vh;
+    }
+    .container-section-8-brands :nth-child(7){
+        width: 40%;
+        min-width: 120px;
+        height: 10vh;
+    }
+
+    .container-section-8-brands :nth-child(7) img{
+        width: 100%;
+        height: 10vh;
+    }
+
+    .container-section-8-brands :nth-child(8){
+        width: 40%;
+        min-width: 120px;
+        height: 10vh;
+    }
+    .container-section-8-brands :nth-child(8) img{
+        width: 100%;
+        height: 10vh;
+    }
+
+
+    .container-section-8-console .section-8-img{
+        width: 180%;
+    }
+
+    .container-section-8-texts h3{
+        font-size: 1.5rem;
+    }
+
+    .container-section-8-texts p{
+        font-size: 1rem;
+    }
+
+
+    .container-section-8-texts button{
+        font-size: 0.75rem;    
+        padding: 0.75rem 2rem;
+        
+    }
+
 }
 
 @media (max-width:400px) {

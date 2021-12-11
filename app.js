@@ -303,15 +303,15 @@ const keepFixedTheTool = (entries, observer) =>{
     const $lorem = document.getElementById('id-lorem');
 
       if(interseccion>0.95){
-        $lorem.style.transform = `translateX(-${89.5}vw)`;
+        $lorem.style.transform = `translateX(-${1900}px)`;
         $lorem.style.transition = 'all 0.5s linear';
       }else{
-        $lorem.style.transform = `translateX(-${interseccion*89.5}vw)`;
+        $lorem.style.transform = `translateX(-${interseccion*2000}px)`;
         $lorem.style.transition = 'all 0.5s linear';
       }
   }else{
     const $lorem = document.getElementById('id-lorem');
-    $lorem.style.transform = `translateX(${interseccion*89.5}vw)`;
+    $lorem.style.transform = `translateX(${interseccion*2000}px)`;
   }
 }
 
@@ -398,26 +398,58 @@ observerKeepFixedTheTool.observe($observerKeepFixedTheTool);
 
 
 /* Buttons para el primer slider */
+$slider.style.marginLeft =`-${142.25}vw`;
 
 const next = () =>{
   let $lastSlide = document.querySelectorAll('.container-section-4-one')[0]; 
-  $slider.style.marginLeft = '-120vw';
+  const vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  let sum = 0;
+  if(vw>=992 && vw <1200){
+    sum=2;
+  }else if(vw>=768 && vw <992){
+    sum=2.5;
+  }
+  else if(vw>=576 && vw <768){
+    sum=4;
+  }else if(vw>=320 && vw <576){
+    sum=6;
+  }
+  $slider.style.marginLeft = `-${285}vw`;
   $slider.style.transition = 'all 0.5s';
   setTimeout(function(){
   $slider.style.transition = 'none';
     $slider.insertAdjacentElement('beforeend', $lastSlide);
-    $slider.style.marginLeft ='-52vw';
+    $slider.style.marginLeft =`-${142.25}vw`;
   },400);
 }
 
 const previous = () =>{
   let $lastSlide = document.querySelectorAll('.container-section-4-one')[3]; 
-  $slider.style.marginLeft = '16vw';
+  const vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  let sum = 0;
+  if(vw>=992 && vw <1200){
+    sum=2;
+  }else if(vw>=768 && vw <992){
+    sum=2.5;
+  }
+  else if(vw>=576 && vw <768){
+    sum=4;
+  }else if(vw>=320 && vw <576){
+    sum=6;
+  }
+  
+  $slider.style.marginLeft = '0vw';
   $slider.style.transition = 'all 0.5s';
   setTimeout(function (){
     $slider.style.transition = 'none';
     $slider.insertAdjacentElement('afterbegin', $lastSlide);
-    $slider.style.marginLeft ='-52vw';
+    $slider.style.marginLeft =`-${142.5}vw`;
   },500);
 }
 
