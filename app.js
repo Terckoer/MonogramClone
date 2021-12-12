@@ -488,6 +488,7 @@ const previousTwo = () =>{
     $sliderTwo.insertAdjacentElement('afterbegin', $lastSlide);
     $sliderTwo.style.marginLeft ='0vw';
   },500);
+  
 }
 
 $buttonRightTwo.addEventListener('click', () => nextTwo());
@@ -506,7 +507,6 @@ $menu.addEventListener('click', () =>{
     $nav.style.transition = 'all 0.5s linear';
   }else{
     $nav.style.transition = 'all 0.5s linear';
-
   }
 });
 
