@@ -16,6 +16,15 @@ const $buttonRightTwo = document.getElementById('button-right-two');
 const $buttonLeftTwo = document.getElementById('button-left-two');
 const $firstLastSlideTwo = document.querySelectorAll('.container-section-7-one')[3];
 
+//Menu
+const $menu = document.getElementById('id-menu');
+
+//Extra variables
+
+let count=0;
+let subiendo = false;
+let isBlueActive = false;
+
 
 let arr = [];
 for(let i=0;i<=1;i+=0.05){
@@ -63,8 +72,6 @@ const imageOpacity = () => {
   }
 };
 
-let count=0;
-
 const revealTexts = () =>{
   const $h3 = document.getElementById('first-turn');
   const $p = document.getElementById('second-turn');
@@ -91,7 +98,8 @@ const hideOnScroll = (entries, observer) =>{
     const $image = document.getElementById('id-first-hidden-1');
     let intersectionRate = entries[0].intersectionRatio;
     let brillo = intersectionRate*5<0.42?0:intersectionRate*5;
-    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-intersectionRate*1.5;
+    let maximum = (intersectionRate*1.5)>1?1:intersectionRate*1.5;
+    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-maximum;
     $texts.style.opacity = (1.0-brillo)+'';
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
@@ -113,7 +121,8 @@ const hideOnScroll2 = (entries, observer) =>{
     const $image = document.getElementById('id-first-hidden-two');
     let intersectionRate = entries[0].intersectionRatio;
     let brillo = intersectionRate*5<0.42?0:intersectionRate*5;
-    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-intersectionRate*1.5;
+    let maximum = (intersectionRate*1.5)>1?1:intersectionRate*1.5;
+    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-maximum;
     $texts.style.opacity = (1.0-brillo)+'';
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
@@ -134,7 +143,8 @@ const hideOnScroll3 = (entries, observer) =>{
     const $image = document.getElementById('id-first-hidden-1-three');
     let intersectionRate = entries[0].intersectionRatio;
     let brillo = intersectionRate*5<0.42?0:intersectionRate*5;
-    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-intersectionRate*1.5;
+    let maximum = (intersectionRate*1.5)>1?1:intersectionRate*1.5;
+    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-maximum;
     $texts.style.opacity = (1.0-brillo)+'';
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
@@ -155,7 +165,8 @@ const hideOnScroll4 = (entries, observer) =>{
     const $image = document.getElementById('id-first-hidden-1-four');
     let intersectionRate = entries[0].intersectionRatio;
     let brillo = intersectionRate*5<0.42?0:intersectionRate*5;
-    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-intersectionRate*1.5;
+    let maximum = (intersectionRate*1.5)>1?1:intersectionRate*1.5;
+    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-maximum;
     $texts.style.opacity = (1.0-brillo)+'';
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
@@ -176,7 +187,8 @@ const hideOnScroll5 = (entries, observer) =>{
     const $image = document.getElementById('id-first-hidden-1-five');
     let intersectionRate = entries[0].intersectionRatio;
     let brillo = intersectionRate*5<0.42?0:intersectionRate*5;
-    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-intersectionRate*1.5;
+    let maximum = (intersectionRate*1.5)>1?1:intersectionRate*1.5;
+    let escala = (1.0-intersectionRate*1.5)<0?0:1.0-maximum;
     $texts.style.opacity = (1.0-brillo)+'';
     $image.style.opacity = (1.0-brillo)+'';
     $image.style.transition = 'all 0.3s ease';
@@ -191,7 +203,6 @@ const hideOnScroll5 = (entries, observer) =>{
   }
 }
 
-let subiendo = false;
 const hideOnScroll6 = (entries, observer) =>{
   let intersection = entries[0].intersectionRatio;
   if(intersection>0.005){
@@ -254,7 +265,6 @@ const hideOnScroll6 = (entries, observer) =>{
 }
 
 
-let isBlueActive = false;
 
 const showNewImageColor = (entries, observer) =>{
   let interseccion = entries[0].intersectionRatio;
@@ -482,7 +492,23 @@ const previousTwo = () =>{
 
 $buttonRightTwo.addEventListener('click', () => nextTwo());
 $buttonLeftTwo.addEventListener('click', () => previousTwo());
+$menu.addEventListener('click', () =>{
+  let $nav = document.getElementById('id-nav');
+  let $li = document.querySelectorAll('.ul-none');
+  let $ul = document.getElementById('id-ul');
 
+  $li.forEach(e => e.classList.toggle('ul-show'));
+  $nav.classList.toggle('show-menu');
+  $ul.classList.toggle('show-ul');
+
+  if($nav.classList.contains('show-menu')){
+    $nav.style.left = '0vw';
+    $nav.style.transition = 'all 0.5s linear';
+  }else{
+    $nav.style.transition = 'all 0.5s linear';
+
+  }
+});
 
 document.addEventListener("scroll", function () {
   textHidden();

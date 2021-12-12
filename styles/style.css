@@ -123,6 +123,32 @@ li{
     color: #efc2b3;
 }
 
+.header .show-menu{
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    background: #1a2456;
+    align-self: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    left: -60vw;
+    border: 5px solid cyan;
+}
+
+
+.header .show-ul{
+    width: 30vw;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 5px solid yellow;
+    font-size: 1.5rem;
+}
+
+
 /* MAIN CONTAINER */
 
 .main {
@@ -617,6 +643,7 @@ li{
 .container-section-3-one h3{
     font-size: 2.25rem;
     font-weight: 500;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
     padding: 0;
@@ -1295,13 +1322,13 @@ li{
 }
 .section-5-sticky{
     width: 100%;
-    height: 80vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: sticky;
-    top: 20vh;
+    top: 0px;
 }
 
 .section-5 .container-section-5-texts{
@@ -1314,24 +1341,23 @@ li{
 
 .section-5 .container-section-5-tools{
     width: 100%;
-    height: 70vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     bottom: 0;
     left: 0;
+
 }
 
 .section-5 .container-section-5-overflow{
     width: 11%;
     min-width: 180px;
-    height: 50vh;
     position: absolute;
     align-self: center;
-    top: 0;
+    top: 100px;
     overflow: hidden;
-
 }
 
 
@@ -1340,15 +1366,14 @@ li{
     min-width: 300px;
     align-self: center;
     position: relative;
-    bottom: -25vh;
+    top: 20px;
 }
 
 .container-section-5-tools #id-lorem{
     width: 2025px;
     position: relative;
-    align-self: flex-end;
-    top: 30vh;
-    left: 1.5vw;
+    align-self: flex-start;
+    left:1.5vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -2100,6 +2125,11 @@ footer .footer-contact-me{
         display: none;
     }
 
+    .header .ul-show{
+        display: inline;
+        border: 2px solid red;
+    }
+
     .header .ul-menu{
         display: inline;
     }
@@ -2735,13 +2765,13 @@ footer .footer-contact-me{
     .section-4-one-content p{
         font-size: 0.9rem;
     }
-
+/* 
     .container-section-5-tools .tools-container-5{
         bottom: -10vh;
     }
     .section-5 .container-section-5-overflow{
         top: -15vh;
-    }
+    } */
     .section-6 .container-section-6-text{
         width: 80%;
     }
@@ -2864,13 +2894,11 @@ footer .footer-contact-me{
 }
 
 
-@media (orientation:landscape) {
-
+@media (orientation:landscape) and (max-height:480px) {
 
     .main-container-texts{
         margin-top: 2rem;
         height: 100vh;
-        
     }
 
 
@@ -2982,44 +3010,38 @@ footer .footer-contact-me{
         height: 110vh;
     }
 
-    .section-5-100vh{
-        height: 350vh;
-    }
-    .section-5-sticky{
-        width: 100%;
-        height: 250vh;
-        top: -75vh;
-    }
-
     .section-5 .container-section-5-texts{
         width: 70%;
         height: 100vh;
         margin-bottom: 25vh;
     }
-    .section-5 .container-section-5-tools{
-        width: 100%;
-        height: 100vh;
+
+
+    .section-5{
+        height: 650vh;
     }
 
-    .container-section-5-tools .tools-container-5{
-        width: 18%;
-        min-width: 300px;
-        align-self: center;
-        position: relative;
-        bottom: -30vh;
+    .section-5-100vh{
+        height: 550vh;
+    }
+    .section-5-sticky{
+        height: 600px;
+        top: -100px;
+    }
+
+    .section-5 .container-section-5-tools{
+        height: 600px;
+        bottom: 0;
+        left: 0;
+
     }
 
     .tools-container{
-        width: 150px;
         height: 300vh;
-        top: -50vh;
+        top: 7vh;
         gap: 7rem;
-    }
+    } 
 
-    .container-section-5-tools #id-lorem{
-        top: 15vh;
-        left: 5vw;
-    }
     .section-7 .section-7-slider{
         height: 200vh;
     }
