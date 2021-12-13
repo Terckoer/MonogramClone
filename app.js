@@ -522,5 +522,5 @@ document.addEventListener("scroll", function () {
 
 setInterval(() => {
   nextTwo();
-}, 5000);
+}, 3000);
 

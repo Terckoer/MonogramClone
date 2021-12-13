@@ -1290,6 +1290,11 @@ li{
     text-align: center;
 }
 
+
+.section-4-one-content button:hover{
+    background: #0d153a;
+}
+
 .section-4 .previous-button{
     width: 70px;
     height: 50px;
@@ -1884,7 +1889,7 @@ footer .footer-container{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 3rem;
     gap: 2rem;
 }
@@ -1894,6 +1899,7 @@ footer .footer-monogram{
     display:flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .footer-monogram p{
@@ -1971,8 +1977,7 @@ footer .footer-suscribe{
 
 .footer-suscribe .footer-suscribe-form{
     display: flex;
-    width: 100%;
-    
+    width: 60%;
 }
 
 .footer-suscribe-form .input-text{
@@ -2382,14 +2387,6 @@ footer .footer-contact-me{
         right: 5vw;
     }
 
-    footer .footer-container{
-        width: 50%;
-        margin-top: 3rem;
-    }
-
-    footer .footer-suscribe{
-        width: 50%;
-    }
 
 }
 
@@ -2645,8 +2642,6 @@ footer .footer-contact-me{
         font-weight: 300;
     }
 
-
-
     .container-section-8-console .section-8-img{
         width: 160%;
     }
@@ -2794,13 +2789,7 @@ footer .footer-contact-me{
     .section-4-one-content p{
         font-size: 0.9rem;
     }
-/* 
-    .container-section-5-tools .tools-container-5{
-        bottom: -10vh;
-    }
-    .section-5 .container-section-5-overflow{
-        top: -15vh;
-    } */
+
     .section-6 .container-section-6-text{
         width: 80%;
     }
@@ -2855,6 +2844,14 @@ footer .footer-contact-me{
         width: 180%;
     }
 
+    .container-section-8-console .container-section-8-texts{
+        width: 70%;
+        height: 40vh;
+        bottom: 5rem;
+        right: 1rem;
+        padding:  0 1rem;
+    }
+
     .container-section-8-texts h3{
         font-size: 1.5rem;
     }
@@ -2873,10 +2870,16 @@ footer .footer-contact-me{
     footer .footer-container{
         width: 90%;
         margin-top: 3rem;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
     footer .footer-suscribe{
         width: 90%;
+    }
+
+    .footer-suscribe .footer-suscribe-form{
+        width: 100%;
     }
 
 }
