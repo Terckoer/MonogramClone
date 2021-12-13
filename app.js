@@ -18,6 +18,7 @@ const $firstLastSlideTwo = document.querySelectorAll('.container-section-7-one')
 
 //Menu
 const $menu = document.getElementById('id-menu');
+const $closeMenu = document.getElementById('id-close-modal');
 
 //Extra variables
 
@@ -495,19 +496,21 @@ $buttonRightTwo.addEventListener('click', () => nextTwo());
 $buttonLeftTwo.addEventListener('click', () => previousTwo());
 $menu.addEventListener('click', () =>{
   let $nav = document.getElementById('id-nav');
-  let $li = document.querySelectorAll('.ul-none');
-  let $ul = document.getElementById('id-ul');
+  let $navMenu = document.getElementById('id-nav-menu');
+  let $body = document.getElementById('id-body');  
+  $nav.classList.add('show-menu');
+  $navMenu.classList.add('show-menu-modal');
+  $body.classList.add('modal-visible');
+});
 
-  $li.forEach(e => e.classList.toggle('ul-show'));
-  $nav.classList.toggle('show-menu');
-  $ul.classList.toggle('show-ul');
+$closeMenu.addEventListener('click', ()=>{
+  let $nav = document.getElementById('id-nav');
+  let $navMenu = document.getElementById('id-nav-menu');
+  let $body = document.getElementById('id-body');  
+  $nav.classList.remove('show-menu');
+  $navMenu.classList.remove('show-menu-modal');
+  $body.classList.remove('modal-visible');
 
-  if($nav.classList.contains('show-menu')){
-    $nav.style.left = '0vw';
-    $nav.style.transition = 'all 0.5s linear';
-  }else{
-    $nav.style.transition = 'all 0.5s linear';
-  }
 });
 
 document.addEventListener("scroll", function () {
